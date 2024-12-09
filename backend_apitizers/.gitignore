@@ -34,3 +34,6 @@ build/
 
 ### ENV VARIABLES ###
 .env
+
+### FIREBASE ###
+*.json
