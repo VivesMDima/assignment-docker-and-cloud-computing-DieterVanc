@@ -5,7 +5,7 @@ FROM openjdk:23-jdk
 WORKDIR /app
 
 # Copy the application JAR file
-COPY target/*.jar app.jar
+COPY target/apitizers-0.0.1-SNAPSHOT.jar app.jar
 COPY .env .env
 COPY apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json /app/
 

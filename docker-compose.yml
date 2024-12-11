@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: apitizers_DB
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'YourStrong!Passw0rd'
+    ports:
+      - '1433:1433'
+    volumes:
+      - ./database_apitizers/mssql_data:/var/opt/mssql/data
+      - ./database_apitizers/mssql_logs:/var/opt/mssql/log
+
+
+  backend:
+    build:
+      context: ./backend_apitizers
+      dockerfile: Dockerfile
+    container_name: apitizers_backend
+    ports:
+      - '8080:8080'
+    depends_on:
+      - mssql
+    volumes:
+      - ./backend_apitizers/apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json:/app/apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json
+
+  frontend:
+    build:
+      context: ./frontend_apitizers
+      dockerfile: Dockerfile
+    container_name: apitizers_frontend
+    ports:
+      - '3000:3000'
+    environment:
+      EXPO_DEVTOOLS_PORT: 19002
+    volumes:
+      - ./frontend_apitizers:/app
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+
+
+
+
+
