@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 3000
 
 # Start Expo in web mode and set the port to 3000
-CMD ["expo", "start", "--web", "--port", "3000"]
+CMD ["npx", "expo", "start", "--web", "--port", "3000"]

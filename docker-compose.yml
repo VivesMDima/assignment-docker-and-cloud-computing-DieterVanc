@@ -24,6 +24,12 @@ services:
       - '8080:8080'
     depends_on:
       - mssql
+    environment:
+      DATABASE_URL: jdbc:sqlserver://apitizers_DB:1433;databaseName=apitizers_DB;encrypt=false
+      DATABASE_USERNAME: sa
+      DATABASE_PASSWORD: YourStrong!Passw0rd
+      FIREBASE_KEY_PATH: /app/apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json
+      FIREBASE_STORAGE_BUCKET: apitizers-292a3.firebasestorage.app
     volumes:
       - ./backend_apitizers/apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json:/app/apitizers-292a3-firebase-adminsdk-v0e0m-121067aca5.json
 
@@ -36,8 +42,6 @@ services:
       - '3000:3000'
     environment:
       EXPO_DEVTOOLS_PORT: 19002
-    volumes:
-      - ./frontend_apitizers:/app
     stdin_open: true
     tty: true
     depends_on:

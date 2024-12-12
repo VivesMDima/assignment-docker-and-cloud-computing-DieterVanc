@@ -1,335 +1,161 @@
-2024-12-11 16:43:52.97 Server      Microsoft SQL Server 2022 (RTM-CU15-GDR) (KB5046059) - 16.0.4150.1 (X64) 
-	Sep 25 2024 17:34:41 
+2024-12-11 21:44:27.32 Server      Microsoft SQL Server 2022 (RTM-CU16) (KB5048033) - 16.0.4165.4 (X64) 
+	Nov  6 2024 19:24:49 
 	Copyright (C) 2022 Microsoft Corporation
 	Developer Edition (64-bit) on Linux (Ubuntu 22.04.5 LTS) <X64>
-2024-12-11 16:43:52.97 Server      UTC adjustment: 0:00
-2024-12-11 16:43:52.97 Server      (c) Microsoft Corporation.
-2024-12-11 16:43:52.97 Server      All rights reserved.
-2024-12-11 16:43:52.97 Server      Server process ID is 544.
-2024-12-11 16:43:52.97 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
-2024-12-11 16:43:52.98 Server      Registry startup parameters: 
+2024-12-11 21:44:27.32 Server      UTC adjustment: 0:00
+2024-12-11 21:44:27.33 Server      (c) Microsoft Corporation.
+2024-12-11 21:44:27.33 Server      All rights reserved.
+2024-12-11 21:44:27.33 Server      Server process ID is 540.
+2024-12-11 21:44:27.33 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-12-11 21:44:27.33 Server      Registry startup parameters: 
 	 -d /var/opt/mssql/data/master.mdf
 	 -l /var/opt/mssql/data/mastlog.ldf
 	 -e /var/opt/mssql/log/errorlog
-2024-12-11 16:43:52.98 Server      SQL Server detected 1 sockets with 8 cores per socket and 16 logical processors per socket, 16 total logical processors; using 16 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
-2024-12-11 16:43:52.99 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
-2024-12-11 16:43:52.99 Server      Detected 6261 MB of RAM, 5231 MB of available memory, 5231 MB of available page file. This is an informational message; no user action is required.
-2024-12-11 16:43:52.99 Server      Using conventional memory in the memory manager.
-2024-12-11 16:43:52.99 Server      Detected pause instruction latency: 92 cycles.
-2024-12-11 16:43:52.99 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x000000000000ffff).
-2024-12-11 16:43:53.00 Server      Page exclusion bitmap is enabled.
-2024-12-11 16:43:53.07 Server      Buffer pool extension is not supported on Linux platform.
-2024-12-11 16:43:53.09 Server      Buffer Pool: Allocating 8388608 bytes for 829558 hashPages.
-2024-12-11 16:43:53.20 Server      Buffer pool extension is already disabled. No action is necessary.
-2024-12-11 16:43:53.55 Server      Installing Client TLS certificates to the store.
-2024-12-11 16:43:53.56 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2 AVX512 (F CD BW DQ VL IFMA VBMI VBMI2 VNNI BITALG VPOQCNTDQ VP2INTERSECT)
-2024-12-11 16:43:53.62 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
-2024-12-11 16:43:53.64 Server      Query Store settings initialized with enabled = 1, 
-2024-12-11 16:43:53.66 Server      The maximum number of dedicated administrator connections for this instance is '1'
-2024-12-11 16:43:53.66 Server      Node configuration: node 0: CPU mask: 0x000000000000ffff:0 Active CPU mask: 0x000000000000ffff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
-2024-12-11 16:43:53.68 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
-2024-12-11 16:43:53.68 Server      Lock partitioning is enabled.  This is an informational message only. No user action is required.
-2024-12-11 16:43:53.71 Server      In-Memory OLTP initialized on lowend machine.
-2024-12-11 16:43:53.77 Server      [INFO] Created Extended Events session 'hkenginexesession'
-2024-12-11 16:43:53.77 Server      CLR version v4.0.30319 loaded.
-2024-12-11 16:43:53.78 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
-2024-12-11 16:43:53.79 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
-2024-12-11 16:43:53.82 Server      clwb is selected for pmem flush operation.
-2024-12-11 16:43:53.82 Server      Software Usage Metrics is disabled.
-2024-12-11 16:43:53.84 spid43s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:53.85 spid43s     Starting up database 'master'.
-2024-12-11 16:43:54.06 Server      Common language runtime (CLR) functionality initialized.
-2024-12-11 16:43:54.13 Server      External governance manager initialized
-2024-12-11 16:43:54.15 spid43s     18 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.17 spid43s     0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.17 spid43s     Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.25 spid43s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:54.26 spid45s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:54.26 spid43s     Starting up database 'model_replicatedmaster'.
-2024-12-11 16:43:54.26 spid45s     Starting up database 'mssqlsystemresource'.
-2024-12-11 16:43:54.27 spid45s     The resource database build version is 16.00.4150. This is an informational message only. No user action is required.
-2024-12-11 16:43:54.29 spid45s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:54.29 spid45s     Starting up database 'model'.
-2024-12-11 16:43:54.57 spid43s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
-2024-12-11 16:43:54.57 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
-2024-12-11 16:43:54.59 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
-2024-12-11 16:43:54.60 spid45s     1 transactions rolled forward in database 'model' (3:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.65 spid45s     0 transactions rolled back in database 'model' (3:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.66 spid45s     Recovery is writing a checkpoint in database 'model' (3). This is an informational message only. No user action is required.
-2024-12-11 16:43:54.78 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
-2024-12-11 16:43:54.80 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
-2024-12-11 16:43:54.82 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
-2024-12-11 16:43:54.83 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
-2024-12-11 16:43:54.85 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
-2024-12-11 16:43:54.86 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
-2024-12-11 16:43:54.88 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
-2024-12-11 16:43:54.89 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
-2024-12-11 16:43:54.91 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
-2024-12-11 16:43:54.92 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
-2024-12-11 16:43:54.93 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
-2024-12-11 16:43:54.95 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
-2024-12-11 16:43:54.96 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
-2024-12-11 16:43:54.98 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
-2024-12-11 16:43:54.99 spid53s     A self-generated certificate was successfully loaded for encryption.
-2024-12-11 16:43:54.99 spid53s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
-2024-12-11 16:43:54.99 spid53s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
-2024-12-11 16:43:55.00 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
-2024-12-11 16:43:55.00 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
-2024-12-11 16:43:55.00 Server      Dedicated admin connection support was established for listening locally on port 1434.
-2024-12-11 16:43:55.00 spid53s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
-2024-12-11 16:43:55.00 spid53s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
-2024-12-11 16:43:55.00 spid53s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
-2024-12-11 16:43:55.29 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
-2024-12-11 16:43:55.30 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
-2024-12-11 16:43:55.32 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
-2024-12-11 16:43:55.34 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
-2024-12-11 16:43:55.35 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
-2024-12-11 16:43:55.37 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
-2024-12-11 16:43:55.38 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
-2024-12-11 16:43:55.40 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
-2024-12-11 16:43:55.42 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
-2024-12-11 16:43:55.43 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
-2024-12-11 16:43:55.55 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
-2024-12-11 16:43:55.56 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
-2024-12-11 16:43:55.58 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
-2024-12-11 16:43:55.60 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
-2024-12-11 16:43:55.68 spid43s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:55.68 spid43s     Starting up database 'model_msdb'.
-2024-12-11 16:43:55.91 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:43:55.91 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:43:56.06 spid43s     Converting database 'model_msdb' from version 927 to the current version 957.
-2024-12-11 16:43:56.06 spid43s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
-2024-12-11 16:43:56.08 spid43s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
-2024-12-11 16:43:56.11 spid43s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
-2024-12-11 16:43:56.13 spid43s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
-2024-12-11 16:43:56.28 spid43s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
-2024-12-11 16:43:56.29 spid43s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
-2024-12-11 16:43:56.31 spid43s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
-2024-12-11 16:43:56.32 spid43s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
-2024-12-11 16:43:56.34 spid43s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
-2024-12-11 16:43:56.35 spid43s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
-2024-12-11 16:43:56.37 spid43s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
-2024-12-11 16:43:56.38 spid43s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
-2024-12-11 16:43:56.39 spid43s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
-2024-12-11 16:43:56.41 spid43s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
-2024-12-11 16:43:56.42 spid43s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
-2024-12-11 16:43:56.44 spid43s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
-2024-12-11 16:43:56.56 spid43s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
-2024-12-11 16:43:56.58 spid43s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
-2024-12-11 16:43:56.74 spid43s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
-2024-12-11 16:43:56.75 spid43s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
-2024-12-11 16:43:56.76 spid43s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
-2024-12-11 16:43:56.78 spid43s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
-2024-12-11 16:43:56.79 spid43s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
-2024-12-11 16:43:56.81 spid43s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
-2024-12-11 16:43:56.83 spid43s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
-2024-12-11 16:43:56.84 spid43s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
-2024-12-11 16:43:56.86 spid43s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
-2024-12-11 16:43:56.88 spid43s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
-2024-12-11 16:43:56.89 spid43s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
-2024-12-11 16:43:56.94 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:43:56.94 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:43:57.07 spid43s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
-2024-12-11 16:43:57.16 spid43s     Resource governor reconfiguration succeeded.
-2024-12-11 16:43:57.16 spid59s     Attribute synchronization initialized
-2024-12-11 16:43:57.16 spid43s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
-2024-12-11 16:43:57.16 spid59s     Attribute synchronization manager initialized
-2024-12-11 16:43:57.16 spid43s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
-2024-12-11 16:43:57.24 spid43s     SQL Trace ID 1 was started by login "sa".
-2024-12-11 16:43:57.25 spid43s     Server name is '9ec55190bfd3'. This is an informational message only. No user action is required.
-2024-12-11 16:43:57.27 spid45s     Clearing tempdb database.
-2024-12-11 16:43:57.27 spid71s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
-2024-12-11 16:43:57.27 spid75s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:57.27 spid71s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
-2024-12-11 16:43:57.28 spid75s     Starting up database 'msdb'.
-2024-12-11 16:43:57.56 spid75s     1 transactions rolled forward in database 'msdb' (4:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:57.59 spid75s     0 transactions rolled back in database 'msdb' (4:0). This is an informational message only. No user action is required.
-2024-12-11 16:43:57.59 spid75s     Recovery is writing a checkpoint in database 'msdb' (4). This is an informational message only. No user action is required.
-2024-12-11 16:43:57.96 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:43:57.96 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:43:57.99 spid45s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
-2024-12-11 16:43:58.00 spid45s     Starting up database 'tempdb'.
-2024-12-11 16:43:58.84 spid42s     Using 'dbghelp.dll' version '4.0.5'
-2024-12-11 16:43:58.98 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:43:58.98 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:43:59.99 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:43:59.99 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:00.40 spid45s     The tempdb database has 8 data file(s).
-2024-12-11 16:44:00.41 spid51s     The Service Broker endpoint is in disabled or stopped state.
-2024-12-11 16:44:00.41 spid51s     The Database Mirroring endpoint is in disabled or stopped state.
-2024-12-11 16:44:00.42 spid51s     Service Broker manager has started.
-2024-12-11 16:44:00.42 spid43s     Recovery is complete. This is an informational message only. No user action is required.
-2024-12-11 16:44:01.01 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:01.01 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:02.02 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:02.02 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:03.04 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:03.04 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:04.05 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:04.05 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:05.06 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:05.06 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:06.08 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:06.08 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:07.09 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:07.09 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:08.10 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:08.10 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:09.12 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:09.12 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:10.13 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:10.13 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:11.14 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:11.14 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:12.16 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:12.16 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:13.18 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:13.18 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:14.19 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:14.19 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:15.21 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:15.21 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:16.23 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:16.23 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:17.24 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:17.24 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:18.26 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:18.26 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:19.27 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:19.27 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:20.28 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:20.28 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:21.70 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:21.70 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:21.82 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:21.82 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:22.03 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:22.03 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:22.45 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:22.45 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:23.26 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:23.26 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:24.27 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:24.27 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:25.28 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:25.28 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:26.30 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:26.30 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:27.31 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:27.31 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:28.33 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:28.33 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:29.34 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:29.34 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:30.35 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:30.35 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:31.37 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:31.37 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:32.38 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:32.38 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:33.39 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:33.39 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:34.41 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:34.41 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:35.42 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:35.42 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:36.43 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:36.43 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:37.45 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:37.45 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:38.46 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:38.46 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:39.47 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:39.47 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:40.48 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:40.48 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:41.49 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:41.49 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:42.51 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:42.51 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:43.53 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:43.53 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:44.54 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:44.54 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:45.55 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:45.55 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:46.57 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:46.57 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:47.58 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:47.58 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:48.59 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:48.59 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:49.61 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:49.61 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:50.62 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:50.62 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:44:51.63 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:44:51.63 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:05.77 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:05.77 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:05.89 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:05.89 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:06.11 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:06.11 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:06.52 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:06.52 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:07.34 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:07.34 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:08.35 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:08.35 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:09.37 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:09.37 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:10.38 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:10.38 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:11.39 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:11.39 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:12.41 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:12.41 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:13.43 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:13.43 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:14.44 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:14.44 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:15.45 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:15.45 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:16.46 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:16.46 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:17.48 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:17.48 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:18.50 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:18.50 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:19.51 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:19.51 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:20.53 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:20.53 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:21.54 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:21.54 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:22.56 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:22.56 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:23.57 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:23.57 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:24.59 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:24.59 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:25.60 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:25.60 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:26.62 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:26.62 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:27.63 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:27.63 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:28.64 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:28.64 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:29.66 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:29.66 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:30.67 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:30.67 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:31.69 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:31.69 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:32.70 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:32.70 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:33.72 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:33.72 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:34.73 Logon       Error: 18456, Severity: 14, State: 38.
-2024-12-11 16:45:34.73 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
-2024-12-11 16:45:35.32 spid43s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
-2024-12-11 16:45:35.32 spid43s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
-2024-12-11 16:45:35.33 spid43s     .NET Framework runtime has been stopped.
-2024-12-11 16:45:35.56 spid43s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.
+2024-12-11 21:44:27.34 Server      SQL Server detected 1 sockets with 8 cores per socket and 16 logical processors per socket, 16 total logical processors; using 16 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2024-12-11 21:44:27.34 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2024-12-11 21:44:27.34 Server      Detected 6261 MB of RAM, 5541 MB of available memory, 5541 MB of available page file. This is an informational message; no user action is required.
+2024-12-11 21:44:27.34 Server      Using conventional memory in the memory manager.
+2024-12-11 21:44:27.34 Server      Detected pause instruction latency: 94 cycles.
+2024-12-11 21:44:27.34 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x000000000000ffff).
+2024-12-11 21:44:27.35 Server      Page exclusion bitmap is enabled.
+2024-12-11 21:44:27.41 Server      Buffer pool extension is not supported on Linux platform.
+2024-12-11 21:44:27.41 Server      Buffer Pool: Allocating 8388608 bytes for 879210 hashPages.
+2024-12-11 21:44:27.51 Server      Buffer pool extension is already disabled. No action is necessary.
+2024-12-11 21:44:27.83 Server      Installing Client TLS certificates to the store.
+2024-12-11 21:44:27.84 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2 AVX512 (F CD BW DQ VL IFMA VBMI VBMI2 VNNI BITALG VPOQCNTDQ VP2INTERSECT)
+2024-12-11 21:44:27.89 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2024-12-11 21:44:27.91 Server      Query Store settings initialized with enabled = 1, 
+2024-12-11 21:44:27.92 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2024-12-11 21:44:27.92 Server      Node configuration: node 0: CPU mask: 0x000000000000ffff:0 Active CPU mask: 0x000000000000ffff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2024-12-11 21:44:27.93 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2024-12-11 21:44:27.94 Server      Lock partitioning is enabled.  This is an informational message only. No user action is required.
+2024-12-11 21:44:27.96 Server      In-Memory OLTP initialized on lowend machine.
+2024-12-11 21:44:28.02 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2024-12-11 21:44:28.02 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2024-12-11 21:44:28.04 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2024-12-11 21:44:28.04 Server      CLR version v4.0.30319 loaded.
+2024-12-11 21:44:28.05 Server      clwb is selected for pmem flush operation.
+2024-12-11 21:44:28.05 Server      Software Usage Metrics is disabled.
+2024-12-11 21:44:28.08 spid43s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:28.08 spid43s     Starting up database 'master'.
+2024-12-11 21:44:28.28 Server      Common language runtime (CLR) functionality initialized.
+2024-12-11 21:44:28.34 Server      External governance manager initialized
+2024-12-11 21:44:28.37 spid43s     Service Master Key could not be decrypted using one of its encryptions. See sys.key_encryptions for details.
+2024-12-11 21:44:28.37 spid43s     An error occurred during Service Master Key initialization. SQLErrorCode=33095, State=14, LastOsError=2.
+2024-12-11 21:44:28.37 spid43s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:28.38 spid45s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:28.38 spid43s     Starting up database 'model_replicatedmaster'.
+2024-12-11 21:44:28.38 spid45s     Starting up database 'mssqlsystemresource'.
+2024-12-11 21:44:28.38 spid45s     The resource database build version is 16.00.4165. This is an informational message only. No user action is required.
+2024-12-11 21:44:28.40 spid45s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:28.41 spid45s     Starting up database 'model'.
+2024-12-11 21:44:28.64 spid43s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+2024-12-11 21:44:28.64 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+2024-12-11 21:44:28.66 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+2024-12-11 21:44:28.75 spid53s     A self-generated certificate was successfully loaded for encryption.
+2024-12-11 21:44:28.75 spid53s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2024-12-11 21:44:28.75 spid53s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2024-12-11 21:44:28.76 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+2024-12-11 21:44:28.76 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+2024-12-11 21:44:28.76 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2024-12-11 21:44:28.76 spid53s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2024-12-11 21:44:28.76 spid53s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2024-12-11 21:44:28.77 spid53s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2024-12-11 21:44:28.93 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+2024-12-11 21:44:28.95 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+2024-12-11 21:44:28.97 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+2024-12-11 21:44:28.99 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+2024-12-11 21:44:29.01 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+2024-12-11 21:44:29.03 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+2024-12-11 21:44:29.05 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+2024-12-11 21:44:29.07 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+2024-12-11 21:44:29.09 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+2024-12-11 21:44:29.11 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+2024-12-11 21:44:29.14 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+2024-12-11 21:44:29.16 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+2024-12-11 21:44:29.18 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+2024-12-11 21:44:29.20 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+2024-12-11 21:44:29.23 Logon       Error: 18456, Severity: 14, State: 38.
+2024-12-11 21:44:29.23 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
+2024-12-11 21:44:29.52 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+2024-12-11 21:44:29.54 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+2024-12-11 21:44:29.56 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+2024-12-11 21:44:29.58 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+2024-12-11 21:44:29.60 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+2024-12-11 21:44:29.62 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+2024-12-11 21:44:29.64 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+2024-12-11 21:44:29.66 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+2024-12-11 21:44:29.69 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+2024-12-11 21:44:29.71 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+2024-12-11 21:44:29.85 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+2024-12-11 21:44:29.87 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+2024-12-11 21:44:29.88 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+2024-12-11 21:44:29.91 spid43s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+2024-12-11 21:44:30.02 spid43s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:30.03 spid43s     Starting up database 'model_msdb'.
+2024-12-11 21:44:30.24 spid43s     Converting database 'model_msdb' from version 927 to the current version 957.
+2024-12-11 21:44:30.24 spid43s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+2024-12-11 21:44:30.25 Logon       Error: 18456, Severity: 14, State: 38.
+2024-12-11 21:44:30.25 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
+2024-12-11 21:44:30.26 spid43s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+2024-12-11 21:44:30.30 spid43s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+2024-12-11 21:44:30.33 spid43s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+2024-12-11 21:44:30.49 spid43s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+2024-12-11 21:44:30.51 spid43s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+2024-12-11 21:44:30.54 spid43s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+2024-12-11 21:44:30.56 spid43s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+2024-12-11 21:44:30.57 spid43s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+2024-12-11 21:44:30.59 spid43s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+2024-12-11 21:44:30.61 spid43s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+2024-12-11 21:44:30.63 spid43s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+2024-12-11 21:44:30.66 spid43s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+2024-12-11 21:44:30.68 spid43s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+2024-12-11 21:44:30.70 spid43s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+2024-12-11 21:44:30.72 spid43s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+2024-12-11 21:44:30.86 spid43s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+2024-12-11 21:44:30.88 spid43s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+2024-12-11 21:44:31.05 spid43s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+2024-12-11 21:44:31.07 spid43s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+2024-12-11 21:44:31.09 spid43s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+2024-12-11 21:44:31.11 spid43s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+2024-12-11 21:44:31.13 spid43s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+2024-12-11 21:44:31.15 spid43s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+2024-12-11 21:44:31.17 spid43s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+2024-12-11 21:44:31.19 spid43s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+2024-12-11 21:44:31.22 spid43s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+2024-12-11 21:44:31.24 spid43s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+2024-12-11 21:44:31.25 spid43s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+2024-12-11 21:44:31.27 Logon       Error: 18456, Severity: 14, State: 38.
+2024-12-11 21:44:31.27 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'apitizers_DB'. [CLIENT: 172.18.0.3]
+2024-12-11 21:44:31.43 spid43s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+2024-12-11 21:44:31.54 spid43s     Resource governor reconfiguration succeeded.
+2024-12-11 21:44:31.54 spid60s     Attribute synchronization initialized
+2024-12-11 21:44:31.55 spid43s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2024-12-11 21:44:31.55 spid60s     Attribute synchronization manager initialized
+2024-12-11 21:44:31.55 spid43s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2024-12-11 21:44:31.64 spid43s     SQL Trace ID 1 was started by login "sa".
+2024-12-11 21:44:31.66 spid43s     Server name is '9ec55190bfd3'. This is an informational message only. No user action is required.
+2024-12-11 21:44:31.68 spid45s     Clearing tempdb database.
+2024-12-11 21:44:31.68 spid73s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2024-12-11 21:44:31.68 spid69s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:31.68 spid70s     [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:31.68 spid73s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2024-12-11 21:44:31.69 spid69s     Starting up database 'msdb'.
+2024-12-11 21:44:31.69 spid70s     Starting up database 'apitizers_DB'.
+2024-12-11 21:44:31.69 spid70s     RemoveStaleDbEntries: Cleanup of stale DB entries called for database ID: [5]
+2024-12-11 21:44:31.69 spid70s     RemoveStaleDbEntries: Cleanup of stale DB entries skipped because master db is not memory optimized. DbId: 5.
+2024-12-11 21:44:31.95 spid70s     Parallel redo is started for database 'apitizers_DB' with worker pool size [8].
+2024-12-11 21:44:32.04 spid70s     Parallel redo is shutdown for database 'apitizers_DB' with worker pool size [8].
+2024-12-11 21:44:32.37 spid45s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-12-11 21:44:32.38 spid45s     Starting up database 'tempdb'.
+2024-12-11 21:44:33.07 spid42s     Using 'dbghelp.dll' version '4.0.5'
+2024-12-11 21:44:34.74 spid45s     The tempdb database has 8 data file(s).
+2024-12-11 21:44:34.75 spid51s     The Service Broker endpoint is in disabled or stopped state.
+2024-12-11 21:44:34.75 spid51s     The Database Mirroring endpoint is in disabled or stopped state.
+2024-12-11 21:44:34.75 spid51s     Service Broker manager has started.
+2024-12-11 21:44:34.76 spid43s     Recovery is complete. This is an informational message only. No user action is required.
+2024-12-11 21:44:50.05 spid43s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
+2024-12-11 21:44:50.05 spid43s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
+2024-12-11 21:44:50.05 spid43s     .NET Framework runtime has been stopped.
+2024-12-11 21:44:50.16 spid51s     Service Broker manager has shut down.
+2024-12-11 21:44:50.39 spid43s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.
